@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: #2b6cb0;
+  color: #fff;
+}
+
+/* Buttons */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: #2b6cb0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  opacity: 0.9;
+}
+
+/* Tier Badges */
+.tier-badge span {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.entry { background: #718096; }
+.core { background: #2b6cb0; }
+.premium { background: #e53e3e; }
+
+/* Cards */
+.tiers-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.8s forwards;
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
